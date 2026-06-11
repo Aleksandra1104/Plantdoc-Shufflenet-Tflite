@@ -13,8 +13,8 @@ On-device plant **leaf disease classifier**: a ShuffleNetV2 model pretrained on
 
 - **Mobile-first.** ShuffleNetV2 x1.0 (~1.3M parameters) keeps the exported model small
   and fast enough for real-time, on-device inference.
-- **Honest evaluation.** Three-way split — the official PlantDoc test set is held out and
-  scored exactly once, so the headline number isn't inflated by tuning against it.
+- **Honest evaluation.** Three-way split. The official PlantDoc test set is held out and
+  scored only once, so the headline number isn't inflated by tuning against it.
 - **Transfer learning that actually helps.** PlantVillage backbone pretraining roughly
   doubles accuracy versus fine-tuning from ImageNet alone on this dataset.
 - **Reproducible.** Seeded data split and augmentation; a single Kaggle notebook runs the
